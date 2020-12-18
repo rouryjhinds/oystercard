@@ -37,5 +37,6 @@ class Oystercard
     @entry_station = nil
     @exit_station = exit_station
     @journeys[:exit_station] = exit_station
+    #if you need to store multiple journeys - try creating the hash here and then pushing into journey array
   end
 end

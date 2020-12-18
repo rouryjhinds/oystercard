@@ -64,7 +64,6 @@ describe Oystercard do
         subject.touch_out(exit_station)
         expect(subject.journeys).to include journey
       end
-
     end
   end
 
@@ -79,5 +78,4 @@ describe Oystercard do
       expect { subject.top_up(balance_limit) }.to raise_error "top up balance of #{balance_limit} exceeded"
     end
   end
-
 end
